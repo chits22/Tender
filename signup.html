@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <h1 id="tender_header">Tender</h1>
+  <h2 id="tender_header_h2">The Tinder for Tennis </h2>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="css/sign-up.css">
+
+
+</head>
+
+<body>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+<script src="signup.js"> </script>
+      <form name="Form" action="thank-you.html" onsubmit = "return validateForm()" method="post">
+
+        <h1 id = "form_sign_up">Sign Up</h1>
+
+        <fieldset>
+
+          <label for="name">Name (First and Last)* :</label>
+          <input type="text" id="name" name="user_name">
+
+          <label for="mail">Email* :</label>
+          <input type="email" id="mail" name="user_email">
+
+          <label for="password">Password* :</label>
+          <input type="password" id="password" name="user_password">
+
+          <label for="password">Re-enter Password* :</label>
+          <input type="password" id="password2" name="user_password2">
+
+        <label for="job">Skill Level (NTRP Ranking)* :</label>
+        <select id="job" name="user_job">
+
+            <option value="1.0">1.0</option>
+            <option value="1.5">1.5</option>
+            <option value="2.0">2.0</option>
+            <option value="2.5">2.5</option>
+            <option value="3.0">3.0</option>
+            <option value="3.5">3.5</option>
+            <option value="4.0">4.0</option>
+            <option value="4.5">4.5</option>
+            <option value="5.0">5.0</option>
+            <option value="5.5">5.5</option>
+            <option value="6.0">6.0</option>
+            <option value="6.5">6.5</option>
+            <option value="7.0">7.0</option>
+        </select>
+
+      <h3>
+        If you are unsure about what your NTRP ranking is, click <a href = "https://www.matchmakertennis.com/ntrp/"> here </a>
+      </h3>
+
+    </fieldset>
+        <button type="submit">Sign Up</button>
+      </form>
+
+    </body>
+</html>
+
+
+
+</body>
+
+</html>
