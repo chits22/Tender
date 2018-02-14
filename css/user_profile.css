@@ -1,0 +1,19 @@
+body{
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+  background-color: #008B8B;
+}
+
+.page{
+  background-color: #FFFFFF;
+}
+
+#prof_pic{
+  width: 100%;
+  height: 100%;
+}
+
+/* .row{
+  border-color: #000000;
+  border-style: dotted;
+} */

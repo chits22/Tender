@@ -1,0 +1,54 @@
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0; }
+
+/* .container {
+  width: 63%;
+  padding: 5% 20% 5% 17%;
+  font-family: "Lato", sans-serif;
+  color: black; } */
+  .container .r {
+    height: 23px;
+    width: 100%; }
+    .container .r .c {
+      height: 100%;
+      width: 14.285%;
+      background: white;
+      float: left; }
+  .container .times {
+    width: 3%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-right: 1%;
+    float: left;
+    text-align: right;
+    font-size: .75em; }
+    .container .times .r {
+      margin: 1px 0; }
+  .container .days {
+    width: 95%;
+    float: right;
+    text-align: center; }
+    .container .days table.calendar {
+      width: 100%;
+      padding: 0;
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+      -webkit-border-horizontal-spacing: 1px;
+      -webkit-border-vertical-spacing: 0; }
+      .container .days table.calendar tr.r {
+        height: 22px; }
+        .container .days table.calendar tr.r td.c {
+          padding: 12px 0;
+          outline: 1px solid black; }
+        .container .days table.calendar tr.r .selected {
+          background: green; }
+  .container .results {
+    width: 60%;
+    position: absolute;
+    bottom: 15%;
+    margin-left: 3%;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calendar">
+
+<head>
+  <h1 id="tender_header">Tender</h1>
+  <h2 id="tender_header_h2">The Tinder for Tennis </h2>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+
+    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="signup.js"> </script>
+    <link rel="stylesheet" href="./css/user_profile.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js"></script>
+
+    <script src="main.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+  <div class="container page">
+    <div class="row">
+      <div class="col-lg-4">
+        <h1 id="name_text" style="margin: 20px;">Kenneth Gomez</h1>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-lg-4">
+        <label for="skill_level">Skill: </label>
+        <select class="form-control" id="skill_level">
+          <option>1.0: This player is Just starting to play tennis.</option>
+          <option>1.5: Has limited experience and is still working primarily on getting the ball into play.</option>
+          <option>2.0: Needs on-court experience. Has obvious stroke weaknesses but is familiar with basic positions for singles and doubles play.</option>
+          <option>2.5: Learning to judge where the ball is going although court coverage is weak. Can sustain a short rally of slow pace with other players of the same ability.</option>
+          <option>3.0: Fairly consistent when hitting medium-paced shots, but is not comfortable with all strokes and lacks execution when trying for directional control, depth or power. Most common doubles formation is one-up and one-back.</option>
+          <option>3.5: Has achieved improved stroke dependability with directional control on moderate shots, but still lacks depth and variety. Starting to exhibit more aggressive net play, has improved court coverage and is developing teamwork in doubles.</option>
+          <option>4.0: Has dependable strokes, including directional control and depth on both forehand and backhand sides on moderate shots, plus the ability to use lobs, overheads, approach shots and volleys with some success. Occasionally forces errors when serving and teamwork in doubles is evident. Rallies may be lost due to impatience.</option>
+          <option>4.5: Starting to master the use of power and spins and beginning to handle pace, has sound footwork, can control depth of shots and is beginning to vary game plan according to opponents. Can hit first serves with power and accuracy and place the second serve. Tends to overhit on difficult shots. Aggressive net play is common in doubles.</option>
+          <option>5.0: Has good shot anticipation and frequently has an outstanding shot or exceptional consistency around which a game may be structured. Can regularly hit winners or force errors off of short balls and can put away volleys, can successfully execute lobs, drop shots, half volleys and overhead smashes and has good depth and spin on most second serves.</option>
+          <option>5.5: Has developed power and/or consistency as a major weapon. Can vary strategies and styles of play in a competitive situation and hit dependable shots in a stress situation.</option>
+          <option>6.0: Generally do not need NTRP ratings. Rankings or past rankings will speak for themselves. The 6.0 player has obtained a sectional and /or national ranking.</option>
+          <option>6.5: The 6.5 player has extensive satellite tournament experience.</option>
+          <option>7.0: The 7.0 player makes his living from tournament prize money.</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="form-group row">
+          <div class="col-6">
+            <label for="example-date-input" class="col-form-label">Birthday</label>
+            <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-lg-4">
+        <label for="zip">Zip Code:</label>
+        <input type="number" class="form-control" id="zip">
+    </div>
+    <div class="col-lg-4">
+      <label for="home">Homecourt:</label>
+      <input type="text" class="form-control" id="home">
+    </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-lg-12">
+      <label for="bio">Bio:</label>
+      <textarea class="form-control" rows="5" id="bio"></textarea>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Enter your availability: </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container" ng-controller="calendarController">
+        <div class="times">
+          <div class="r" ng-repeat="time in times track by $index">
+            {{ time }}
+          </div>
+        </div>
+        <div class="days">
+          <div class="r">
+            <div class="c" ng-repeat="day in week">
+              {{ day }}
+            </div>
+          </div>
+          <table class="calendar">
+            <tr class="r" ng-repeat="hour in schedule[0] track by $index">
+              <td class="c" ng-repeat="day in schedule track by $index" ng-class="{'selected': schedule[$index][$parent.$index] === 1}">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3" style="margin-top: 30px; margin-bottom: 30px;">
+      <button class="primary">Save Changes</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+    </body>
+
+
+</html>
