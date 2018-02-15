@@ -1,7 +1,7 @@
 var app = angular.module('calendar', []);
 
 app.controller('calendarController', function($scope, $document, $element) {
-  
+
   // DATA //
   $scope.week = [
     'Sun',
@@ -13,29 +13,29 @@ app.controller('calendarController', function($scope, $document, $element) {
     'Sat'
   ];
   $scope.times = [
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9',
-    '10',
-    '11',
-    '12',
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9',
-    '10',
-    '11'
+    "1:00am",
+    "2:00am",
+    "3:00am",
+    "4:00am",
+    "5:00am",
+    "6:00am",
+    "7:00am",
+    "8:00am",
+    "9:00am",
+    "10:00am",
+    "11:00am",
+    "12:00pm",
+    "1:00pm",
+    "2:00pm",
+    "3:00pm",
+    "4:00pm",
+    "5:00pm",
+    "6:00pm",
+    "7:00pm",
+    "8:00pm",
+    "9:00pm",
+    "10:00pm",
+    "11:00pm"
   ];
 
 
@@ -56,7 +56,7 @@ app.controller('calendarController', function($scope, $document, $element) {
     startCell = null;
     dragging = false;
   }
-  
+
   function mouseDown(el) {
     dragging = true;
 
@@ -71,7 +71,7 @@ app.controller('calendarController', function($scope, $document, $element) {
 
   function mouseEnter(el) {
     if (!dragging) return;
-    
+
     var cell = getCoords(el);
     if ($scope.schedule[startCell.day][startCell.hour] === 1) {
       $scope.schedule[cell.day][cell.hour] = 1;
@@ -79,7 +79,7 @@ app.controller('calendarController', function($scope, $document, $element) {
       $scope.schedule[cell.day][cell.hour] = null;
     }
   }
-        
+
   function getCoords(cell) {
     var column = cell[0].cellIndex;
     var row = cell.parent()[0].rowIndex;
@@ -88,7 +88,7 @@ app.controller('calendarController', function($scope, $document, $element) {
       hour: row
     };
   }
-  
+
   function wrap(fn) {
     return function() {
       var el = angular.element(this);
@@ -97,7 +97,7 @@ app.controller('calendarController', function($scope, $document, $element) {
       });
     }
   }
-  
+
   $element.delegate('.c', 'mousedown', wrap(mouseDown));
   $element.delegate('.c', 'mouseenter', wrap(mouseEnter));
   $document.delegate('body', 'mouseup', wrap(mouseUp));
