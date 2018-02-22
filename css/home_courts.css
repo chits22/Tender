@@ -11,3 +11,8 @@ body{
 .btn{
   margin-bottom: 50px;
 }
+
+.green_button{
+  background-color: #008B8B;
+  color: #FFFFFF;
+}
