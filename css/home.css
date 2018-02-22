@@ -7,3 +7,8 @@ body{
 .people_rows{
   margin-bottom: 20px;
 }
+
+.green_button{
+  background-color: #008B8B;
+  color: #FFFFFF;
+}
