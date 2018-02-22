@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/home_courts.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -21,7 +21,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height: 45px;">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="home.html">
       <img src="images/ball.png" height="30" width="30">
       Tender</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,13 +29,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Find Player
-            <span class="sr-only">(current)</span>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Find Player
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="home_courts.html">Find Court</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Find Court
+            <span class="sr-only">(current)</span>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Inbox</a>
@@ -54,7 +55,7 @@
 <div class="container" style="margin-top:100px; background-color:#FFFFFF;">
   <div class="row" >
     <div class="col-lg-8" style="margin-bottom: 70px;">
-      <h1 style="margin-top:42px; margin-left:20px;">Players Near You</h1>
+      <h1 style="margin-top:42px; margin-left:20px;">Courts Near You</h1>
     </div>
     <div class="col-4" style="float:right; margin-top: 40px; margin-left:-27px;padding-left: 100px;">
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
@@ -65,57 +66,44 @@
   <div class="row people_rows">
     <div class="col-4">
       <div class="card" style="width: 20rem; margin-left:20px;">
-        <img class="card-img-top" src="images/girl.jpg" height=300 width=300 alt="Card image cap">
+        <img class="card-img-top" src="images/nielsen.jpg" height=300 width=300 alt="Card image cap">
         <div class="card-block">
-          <h3 class="card-title" style="color: #006400;">Chaitra, 20</h3>
-          <h4 style="font-size:20px;">Skill: 6.0</h4>
-          <p class="card-text">I'm ready to play some games!</p>
-          <a href="#" class="btn btn-primary">Message</a>
-          <a href="userprofchaitra.html" class="btn btn-secondary">View Profile</a>
+          <h3 class="card-title" style="color: #006400;">AC Nielsen Tennis Center</h3>
+          <h4 style="font-size:20px;">5 miles away</h4>
+          <p class="card-text">Open 5 days a week</p>
+          <a href="#" class="btn btn-primary">Contact</a>
+          <a href="userprofchaitra.html" class="btn btn-secondary">View Schedule</a>
         </div>
       </div>
     </div>
 
     <div class="col-4">
       <div class="card" style="width: 20rem; margin-left:10px;">
-        <img class="card-img-top" src="images/man.JPG" height=300 width=300 alt="Card image cap">
+        <img class="card-img-top" src="images/nu_in.jpg" height=300 width=300 alt="Card image cap">
         <div class="card-block">
-          <h3 class="card-title" style="color: #006400;">Mark, 26</h3>
-          <h4 style="font-size:20px;">Skill: 2.0</h4>
-          <p class="card-text" >I'm pretty bad but still looking to play!</p>
-          <a href="#" class="btn btn-primary">Message</a>
-          <a href="#" class="btn btn-secondary">View Profile</a>
+          <h3 class="card-title" style="color: #006400;">Combe Tennis Center</h3>
+          <h4 style="font-size:20px;">less than 1 mile away</h4>
+          <p class="card-text" >Open to NU students with reservations</p>
+          <a href="#" class="btn btn-primary">Contact</a>
+          <a href="#" class="btn btn-secondary">View Schedule</a>
         </div>
       </div>
     </div>
 
     <div class="col-4">
       <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="images/boy.png" height=300 width=300 alt="Card image cap">
+        <img class="card-img-top" src="images/nu_out.jpg" height=300 width=300 alt="Card image cap">
         <div class="card-block">
-          <h3 class="card-title" style="color: #006400;">Timmy, 6</h3>
-          <h4 style="font-size:20px;">Skill: 4.0</h4>
-          <p class="card-text">Single and ready to mingle</p>
-          <a href="#" class="btn btn-primary">Message</a>
-          <a href="#" class="btn btn-secondary">View Profile</a>
+          <h3 class="card-title" style="color: #006400;">NU Outdoor Courts</h3>
+          <h4 style="font-size:20px;">less than 1 mile away</h4>
+          <p class="card-text">Open at all times barring bad weather</p>
+          <a href="#" class="btn btn-primary">Contact</a>
+          <a href="#" class="btn btn-secondary">View Schedule</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="row people_rows">
-      <div class="col-4">
-        <div class="card" style="width: 20rem; margin-left:20px; margin-bottom:30px">
-          <img class="card-img-top" src="images/temp_prof.png" height=300 width=300 alt="Card image cap">
-          <div class="card-block">
-            <h3 class="card-title" style="color: #006400;">Person, 18</h3>
-            <h4 style="font-size:20px;">Skill: 6.0</h4>
-            <p class="card-text">I'm ready to play some games!</p>
-            <a href="#" class="btn btn-primary">Message</a>
-            <a href="#" class="btn btn-secondary">View Profile</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </div>
 
 </div>
