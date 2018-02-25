@@ -89,3 +89,21 @@ select {
   margin-right: auto;
   margin-top: -10px;
 }
+
+.new{
+  
+  font-family: 'Nunito', sans-serif;
+  font-size:40px;
+  color: #384047;
+  margin-bottom: 25px;
+  margin-left:10px;
+}
+
+.new2{
+  
+  font-family: 'Nunito', sans-serif;
+  font-size:40px;
+  color: #384047;
+  margin-bottom:0px;
+  margin-left:60px;
+}
