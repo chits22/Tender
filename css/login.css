@@ -11,18 +11,19 @@ h1 {
   font-size: 100px;
 }
 
-body {
-  font-family: 'Nunito', sans-serif;
-  color: #384047;
-  background-color:   #008B8B;
-}
-
 h2{
   text-align:center;
   color: white;
   font-size:25px;
   font-style:italic;
 }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+  background-color:   #008B8B;
+}
+
 img {
   size: 10%;
 }
@@ -91,7 +92,7 @@ select {
 }
 
 .new{
-  
+
   font-family: 'Nunito', sans-serif;
   font-size:40px;
   color: #384047;
@@ -100,7 +101,7 @@ select {
 }
 
 .new2{
-  
+
   font-family: 'Nunito', sans-serif;
   font-size:40px;
   color: #384047;
