@@ -1,0 +1,14 @@
+body{
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+  background-color: #008B8B;
+}
+
+.people_rows{
+  margin-bottom: 20px;
+}
+
+.green_button{
+  background-color: #008B8B;
+  color: #FFFFFF;
+}
