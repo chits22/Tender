@@ -3,12 +3,13 @@
 
 <head>
   <h1 id="tender_header">Tender</h1>
-  <h2 id="tender_header_h2">The Tinder for Tennis </h2>
+  <h2 id="tender_header_h2">Local Tennis Player Matcher</h2>
   <meta charset="UTF-8">
   <title>Sign Up</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
       <link rel="stylesheet" href="css/sign-up.css">
 
@@ -47,7 +48,8 @@
           <label for="password">Re-enter Password* :</label>
           <input type="password" id="password2" name="user_password2">
 
-        <label for="job">Skill Level (NTRP Ranking)* :</label>
+        <label for="job">Skill Level (NTRP Ranking)* : <a href="https://www.matchmakertennis.com/ntrp/" target="_blank"><i class="material-icons">help</i></a> </label>
+
         <select id="job" name="user_job">
             <option value="1.0">1.0</option>
             <option value="1.5">1.5</option>
@@ -64,9 +66,6 @@
             <option value="7.0">7.0</option>
         </select>
 
-      <h3>
-        If you are unsure about what your NTRP ranking is, click <a href="https://www.matchmakertennis.com/ntrp/" target="_blank"> here </a>
-      </h3>
 
     </fieldset>
         <button type="submit">Sign Up</button>
