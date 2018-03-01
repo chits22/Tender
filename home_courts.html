@@ -115,20 +115,42 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Search Settings</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
+        <div class="row">
+          <div class="col-12">
+            <h3 style="margin-top: 25px;">Distance:</h3>
+          </div>
+        </div>
+        <form>
+        <div class="row">
+          <div class="col-12">
+            <input type="range" min="1" max="50" value="25" class="slider" id="distance">
+            <p id="distance_text" style="width: 50px;"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+              <h3 style="margin-top: 50px;">Skill Range:</h3>
+          </div>
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn green_button">Save changes</button>
+        <button type="submit" class="btn green_button">Save changes</button>
+      </form>
       </div>
     </div>
   </div>
 </div>
+</div>
+
+
+<script src="./scripts/edit_settings.js"></script>
+<script src="./scripts/home.js"></script>
+<script src="./scripts/chat_js.js"></script>
   </body>
 </html>
