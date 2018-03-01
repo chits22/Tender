@@ -202,7 +202,7 @@
 </div>
 </div>
 
-<div class="container chat_body" id="chat_window" style="opacity:0;">
+<div class="container chat_body" id="chat_window" style="opacity:0; pointer-events: none;">
     <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px;">
         <div class="col-12">
         	<div class="panel">
@@ -213,14 +213,15 @@
                 </div>
                 <div class="msg_container_base" id="message_thread">
                     <div class="row msg_container base_sent">
+                      <div class="col-2 col-padding avatar" style="padding-right: 3px;">
+                          <img class="chat_img" src="images/girl.JPG" class=" img-responsive">
+                      </div>
                         <div class="col-10 col-padding">
                             <div class="messages msg_sent">
                                 <p id="sent_message">Sup</p>
                             </div>
                         </div>
-                        <div class="col-2 col-padding avatar">
-                            <img class="chat_img" src="images/girl.JPG" class=" img-responsive ">
-                        </div>
+
                     </div>
                   </div>
 
@@ -230,7 +231,7 @@
                   <div class="input-group">
                       <input id="btn-input" name="message_text" type="text" class="form-control input-sm" placeholder="Write your message here..." />
                       <span>
-                      <button type="button" style="position: relative; height:100%;" onclick="send_mes()" class="btn btn-primary btn-sm">Send</button>
+                      <button type="button" style="position: relative; height:100%; background-color: #4bc970;" onclick="send_mes()" class="btn btn-primary btn-sm">Send</button>
                       </span>
                   </div>
                 </div>
