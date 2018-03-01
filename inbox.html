@@ -18,6 +18,8 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="chat_css.css">
+<link rel="stylesheet" href="inbox.css">
 
 </header>
 <body>
@@ -146,7 +148,7 @@
                               <a href="#"><i class=" fa fa-envelope-o"></i> North West</a>
                           </li>
                       </ul>
-                                           
+
 
                   </aside>
                   <aside class="lg-side">
@@ -162,7 +164,7 @@
                       <div class="inbox-body">
                          <div class="mail-option">
                              <div class="chk-all">
-                              
+
                                  <input type="checkbox" class="mail-checkbox mail-group-checkbox">
                                  <div class="btn-group">
                                      <a data-toggle="dropdown" href="#" class="btn mini all" aria-expanded="false">
@@ -206,7 +208,6 @@
                                      <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
                                  </ul>
                              </div>
-
                              <ul class="unstyled inbox-pagination">
                                  <li><span>28th February 2018</span></li>
                                  <li>
@@ -217,46 +218,43 @@
                                  </li>
                              </ul>
                          </div>
-                          <table class="table table-inbox table-hover">
-                            <tbody>
-                              <tr class="unread">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td class="view-message  dont-show">PHPClass</td>
-                                  <td class="view-message ">Added a new class: Login Class Fast Site</td>
-                                  <td class="view-message  inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                                  <td class="view-message  text-right">9:27 AM</td>
-                              </tr>
-                              <tr class="unread">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td class="view-message dont-show">Google Webmaster </td>
-                                  <td class="view-message">Improve the search presence of WebSite</td>
-                                  <td class="view-message inbox-small-cells"></td>
-                                  <td class="view-message text-right">March 15</td>
-                              </tr>
-                              <tr class="">
-                                  <td class="inbox-small-cells">
-                                      <input type="checkbox" class="mail-checkbox">
-                                  </td>
-                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                                  <td class="view-message dont-show">JW Player</td>
-                                  <td class="view-message">Last Chance: Upgrade to Pro for </td>
-                                  <td class="view-message inbox-small-cells"></td>
-                                  <td class="view-message text-right">March 15</td>
-                              </tr>
-                             
-                          </tbody>
-                          </table>
+                        <!-- <div style="border-color:#FF0000; border-style: dotted; position: relative; height:100%; width: 100%;">
+                        </div> -->
+                          <form name="message_input" onsubmit="send_mes()" method="get">
+                        <div style="position:relative; width: 100%; height: 500px;">
+
+
+                          <div class="msg_container_base" id="message_thread" style="position: relative; height: 500px; max-height: 500px;">
+                              <div class="row msg_container base_sent">
+                                  <div class="col-10 col-padding">
+                                      <div class="messages msg_sent">
+                                          <p id="sent_message">Sup</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-2 col-padding avatar">
+                                      <img class="chat_img" src="images/girl.JPG" class=" img-responsive ">
+                                  </div>
+                              </div>
+
+                          </div>
+
+
+
+
+                            <div class="input-group" style="position:absolute; bottom:0px;">
+                                <input id="btn-input" name="message_text"type="text" class="form-control input-sm" placeholder="Write your message here..." />
+                                <span>
+                                <button type="button" style="position: relative; height:100%;" onclick="send_mes()" class="btn btn-primary btn-sm">Send</button>
+                                </span>
+                              </div>
+                              </div>
+                        </form>
                       </div>
                   </aside>
               </div>
 </div>
 
+<script src="./scripts/chat_js.js"></script>
 
 </body>
 

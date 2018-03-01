@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/home.css">
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./chat_css.css">
+
 
   </header>
 
@@ -74,7 +76,7 @@
           <h3 class="card-title" style="color: #006400;">Chaitra, 20</h3>
           <h4 style="font-size:20px;">Skill: 6.0</h4>
           <p class="card-text">I'm ready to play some games</p>
-          <a href="#" class="btn green_button">Message</a>
+          <button type="button" onclick="chat_show()" class="btn green_button">Message</button>
           <a href="userprofchaitra.html" class="btn btn-secondary" >View Profile</a>
         </div>
       </div>
@@ -122,7 +124,6 @@
     </div>
   </div>
 
-</div>
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -134,11 +135,6 @@
         </button>
       </div>
       <div class="modal-body">
-        <!-- <div class="row">
-          <div class="col-12">
-            <h2>Edit Search Settings</h2>
-          </div>
-        </div> -->
         <div class="row">
           <div class="col-12">
             <h3 style="margin-top: 25px;">Distance:</h3>
@@ -204,5 +200,47 @@
     </div>
   </div>
 </div>
+</div>
+
+<div class="container chat_body" id="chat_window" style="opacity:0;">
+    <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px;">
+        <div class="col-12">
+        	<div class="panel">
+                <div class="top-bar" onclick="minimize()">
+                    <div class="col-8">
+                        <p>Chaitra</p>
+                    </div>
+                </div>
+                <div class="msg_container_base" id="message_thread">
+                    <div class="row msg_container base_sent">
+                        <div class="col-10 col-padding">
+                            <div class="messages msg_sent">
+                                <p id="sent_message">Sup</p>
+                            </div>
+                        </div>
+                        <div class="col-2 col-padding avatar">
+                            <img class="chat_img" src="images/girl.JPG" class=" img-responsive ">
+                        </div>
+                    </div>
+                  </div>
+
+
+              <form name="message_input" onsubmit="send_mes()" method="get">
+                <div>
+                  <div class="input-group">
+                      <input id="btn-input" name="message_text" type="text" class="form-control input-sm" placeholder="Write your message here..." />
+                      <span>
+                      <button type="button" style="position: relative; height:100%;" onclick="send_mes()" class="btn btn-primary btn-sm">Send</button>
+                      </span>
+                  </div>
+                </div>
+              </form>
+    		</div>
+        </div>
+    </div>
+</div>
+
+<script src="./scripts/chat_js.js"></script>
+<script src="./scripts/home.js"></script>
   </body>
 </html>

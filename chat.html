@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html>
+<header>
+  <title>Chatbox test</title>
+  <meta charset="utf-8">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./chat_css.css">
+
+</head>
+
+<body>
+<div class="container chat_body">
+    <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px;">
+        <div class="col-12">
+        	<div class="panel">
+                <div class="top-bar" onclick="minimize()">
+                    <div class="col-8">
+                        <p>Chat - Miguel</p>
+                    </div>
+                </div>
+                <div class="msg_container_base" id="message_thread">
+                    <div class="row msg_container base_sent">
+                        <div class="col-10 col-padding">
+                            <div class="messages msg_sent">
+                                <p id="sent_message">Sup</p>
+                            </div>
+                        </div>
+                        <div class="col-2 col-padding avatar">
+                            <img class="chat_img" src="images/girl.JPG" class=" img-responsive ">
+                        </div>
+                    </div>
+
+
+                    <div class="row msg_container base_receive">
+                        <div class="col-2 avatar col-padding">
+                            <img class="chat_img" src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                        <div class="col-10 col-padding">
+                            <div class="messages msg_receive">
+                                <p id="received_message">Waz good</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+              <form name="message_input" onsubmit="send_mes()" method="get">
+                <div>
+                  <div class="input-group">
+                      <input id="btn-input" name="message_text" type="text" class="form-control input-sm" placeholder="Write your message here..." />
+                      <span>
+                      <button type="button" style="position: relative; height:100%;" onclick="send_mes()" class="btn btn-primary btn-sm">Send</button>
+                      </span>
+                  </div>
+                </div>
+              </form>
+    		</div>
+        </div>
+    </div>
+</div>
+
+  <script src="chat_js.js"></script>
+</body>
+</html>
