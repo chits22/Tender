@@ -373,3 +373,7 @@ ul {
 .chat_img{
   padding-right: 10px;
 }
+.inbox_chat{
+  position:absolute;
+  height: 80%;
+}
