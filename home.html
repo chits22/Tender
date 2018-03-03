@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Home</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
+
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,7 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/chat_css.css">
-   
+
 
 
 
@@ -205,13 +205,14 @@
 </div>
 
 <div class="container chat_body" id="chat_window" style="opacity:0; pointer-events: none;">
-    <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px;">
-        <div class="col-12">
-        	<div class="panel">
-                <div class="top-bar" onclick="minimize()">
-                    <div class="col-8">
+    <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px; pointer-events: none;">
+        <div class="col-12" style="pointer-events: none;">
+        	<div class="panel" style="pointer-events: none;">
+                <div class="top-bar" style="pointer-events: none;">
+                    <div class="sender_name">
                         <p>Chaitra</p>
                     </div>
+                    <button type="button" class = "close_button" onclick="chat_hide()">X</button>
                 </div>
                 <div class="msg_container_base" id="message_thread">
                     <div class="row msg_container base_sent">

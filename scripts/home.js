@@ -16,3 +16,9 @@ function chat_show(){
   toggle = true;
   console.log("clicked");
 }
+
+function chat_hide(){
+  wind.style.opacity = 0;
+  toggle = false;
+  console.log("clicked again");
+}
