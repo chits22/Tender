@@ -377,3 +377,10 @@ ul {
   position:absolute;
   height: 80%;
 }
+
+.inbox_name{
+    margin-left:5px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom:5px;
+}
