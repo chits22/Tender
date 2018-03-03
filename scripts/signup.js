@@ -39,6 +39,11 @@ function validateForm2()
             return false;
             
         }
+     if (b.length<=5){
+        alert("Password too short, please enter one over 5 letters");
+        return false;
+    }
 
     }
+
 
