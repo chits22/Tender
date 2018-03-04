@@ -22,7 +22,7 @@ function send_mes(){
   var divs = "<div class=\"row msg_container base_sent\">\
       <div class=\"col-10\">\
           <div class=\"messenger_name\">\
-              <p>Me</p>\
+              <p>Kenneth Gomez:</p>\
           </div>\
           <div class=\"messages msg_sent\">\
               <p id=\"sent_message\">" + message + "</p>\
