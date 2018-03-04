@@ -21,6 +21,9 @@ function send_mes(){
 
   var divs = "<div class=\"row msg_container base_sent\">\
       <div class=\"col-10\">\
+          <div class=\"messenger_name\">\
+              <p>Me</p>\
+          </div>\
           <div class=\"messages msg_sent\">\
               <p id=\"sent_message\">" + message + "</p>\
           </div>\
@@ -29,8 +32,14 @@ function send_mes(){
           <img class=\"chat_img\" src=\"" + sender_avatar + "\" class=\" img-responsive \">\
         </div>\
       </div>";
+
+  if(message==null||message==""){
+    return false;
+  }
+  else {
   document.getElementById("message_thread").innerHTML = current_history + divs;
   document.forms["message_input"]["message_text"].value = "";
+  }
 }
 
 function minimize(){
