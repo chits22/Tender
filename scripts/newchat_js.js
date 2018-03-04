@@ -29,8 +29,14 @@ function send_mes2(){
           <img class=\"chat_img\" style=\"width:50px; height:50px; margin-left:-20px;\"src=\"" + sender_avatar + "\" class=\" img-responsive \">\
         </div>\
       </div>";
+
+  if(message==null||message==""){
+    return false;
+  }
+  else {
   document.getElementById("message_thread").innerHTML = current_history + divs;
   document.forms["message_input"]["message_text"].value = "";
+  }
 }
 
 
