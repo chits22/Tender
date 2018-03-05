@@ -13,27 +13,3 @@ body{
   color: #FFF;
 
 }
-
-.sender_name{
-  width: 100px;
-  display: inline-block;
-}
-
-.close_button{
-  margin-top: -5px;
-  display: inline-block;
-  float: right;
-  z-index: 5;
-  background-color:#4bc970;
-  border: none;
-}
-
-.minimize_button{
-  margin-top: -8px;
-  display: inline-block;
-  float: right;
-  z-index: 5;
-  background-color:#666;
-  border: none;
-  font-size:20px;
- }

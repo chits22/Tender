@@ -19,18 +19,21 @@ function send_mes(){
   var message = document.forms["message_input"]["message_text"].value;
   var current_history = document.getElementById("message_thread").innerHTML;
 
-  var divs = "<div class=\"row msg_container base_sent\">\
-      <div class=\"col-10\">\
-          <div class=\"messages msg_sent\">\
-              <p id=\"sent_message\">" + message + "</p>\
-          </div>\
-      </div>\
-      <div class=\"col-2 avatar\">\
-          <img class=\"chat_img\" src=\"" + sender_avatar + "\" class=\" img-responsive \">\
+  if(message != "" && message != " "){
+    var divs = "<div class=\"row msg_container base_sent\">\
+        <div class=\"col-10\">\
+            <div class=\"messages msg_sent\">\
+                <p id=\"sent_message\">" + message + "</p>\
+            </div>\
         </div>\
-      </div>";
-  document.getElementById("message_thread").innerHTML = current_history + divs;
-  document.forms["message_input"]["message_text"].value = "";
+        <div class=\"col-2 avatar\">\
+            <img class=\"chat_img\" src=\"" + sender_avatar + "\" class=\" img-responsive \">\
+          </div>\
+        </div>";
+    document.getElementById("message_thread").innerHTML = current_history + divs;
+    document.forms["message_input"]["message_text"].value = "";
+    console.log(message);
+  }
 }
 
 function minimize(){

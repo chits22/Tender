@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <title>User Profile: Chaitra Subramaniam</title>
 
-    <link rel="stylesheet" href="css/sign-up.css">
+    <!-- <link rel="stylesheet" href="css/sign-up.css"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
     <!-- <link rel="stylesheet" href="css/main.css"> -->
@@ -21,8 +21,8 @@
 
     <script src="./scripts/main.js"></script>
     <link href="./css/calendar_style.css" rel="stylesheet" type="text/css">
-     <link rel="stylesheet" href="./css/userprofchaitra.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="./css/userprofchaitra.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/chat_css.css">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
           </a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="home_courts.html">Find Court      
+          <a class="nav-link" href="home_courts.html">Find Court
             <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -72,7 +72,7 @@
       <div class="row">
       <div class="col-lg-4">
         <h1 id="name_text" style="margin-top: 20px;margin-right:10px;">Chaitra Subramaniam</h1> </div>
-        <div class="col-lg-4"><button class="primary" data-toggle="modal" data-target="#proto1" style="margin-top:12px;width:150px;height:40px; margin-left:-40px;">Message</button>
+        <div class="col-lg-4" onclick="chat_show()"><button class="btn btn-primary" data-toggle="modal" onlick"chat_show()" data-target="#proto1" style="background-color: #4bc970;margin-top:12px;width:150px;height:40px; margin-left:-40px;">Message</button>
       </div>
 
       </div>
@@ -120,16 +120,51 @@
     <img style="width: 1000px; height: 500px;" src ="images/when2meet.png">
   <div class="row">
     <div class="col-lg-3" style="margin-top: 30px; margin-bottom: 30px;">
-      <button type="button" onclick="location.href='home.html'">Return to Find Users</button>
+      <button type="button" class="btn btn-primary" style="background-color: #4bc970;" onclick="location.href='home.html'">Return to Find Users</button>
     </div>
   </div>
+</div>
+
+<div class="container chat_body" id="chat_window" style="opacity:0;width: 300px; margin-left:900px;">
+    <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:0px;">
+        <div class="col-12" >
+        	<div class="panel" >
+                <div class="top-bar" onclick="minimze()">
+                    <div class="sender_name">
+                        <p>Chaitra</p>
+                    </div>
+                    <button type="button" class="close_button" onclick="chat_hide()">X</button>
+                    <button type="button" class="minimize_button" onclick="minimize()"> - </button>
+                </div>
+                <div class="msg_container_base" id="message_thread">
+                    <div class="row msg_container base_sent">
+                        <div class="col-10 col-padding">
+                        </div>
+                    </div>
+                  </div>
+
+
+              <form name="message_input" onsubmit="send_mes2()" method="get">
+                <div>
+                  <div class="input-group">
+                      <input id="btn-input" name="message_text" type="text" class="form-control input-sm" placeholder="Write your message here..." />
+                      <span>
+                      <button type="button" style="position: relative; height:100%; background-color: #4bc970;" onclick="send_mes2()" class="btn btn-primary btn-sm">Send</button>
+                      </span>
+                  </div>
+                </div>
+              </form>
+    		</div>
+        </div>
+    </div>
 </div>
 
 
 
 
 
-
+<script src="./scripts/newchat_js.js"></script>
+<script src="./scripts/home.js"></script>
     </body>
 
 
