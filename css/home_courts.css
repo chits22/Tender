@@ -15,4 +15,11 @@ body{
 .green_button{
   background-color: #4bc970;
   color: #FFFFFF;
+  padding-left:33px;
+  padding-right:34px;
+}
+.grn_button{
+  background-color: #4bc970;
+  color: #FFFFFF;
+  
 }
