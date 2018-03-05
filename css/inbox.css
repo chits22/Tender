@@ -384,3 +384,12 @@ ul {
     margin-top: 10px;
     margin-bottom:5px;
 }
+
+.messenger_name {
+    font-size: 12px;
+    text-align: right;
+}
+
+.messenger_name_hard {
+    font-size: 12px;
+}
