@@ -19,20 +19,26 @@ function send_mes(){
   var message = document.forms["message_input"]["message_text"].value;
   var current_history = document.getElementById("message_thread").innerHTML;
 
-  if(message != "" && message != " "){
-    var divs = "<div class=\"row msg_container base_sent\">\
-        <div class=\"col-10\">\
-            <div class=\"messages msg_sent\">\
-                <p id=\"sent_message\">" + message + "</p>\
-            </div>\
-        </div>\
-        <div class=\"col-2 avatar\">\
-            <img class=\"chat_img\" src=\"" + sender_avatar + "\" class=\" img-responsive \">\
+  var divs = "<div class=\"row msg_container base_sent\">\
+      <div class=\"col-10\">\
+          <div class=\"messenger_name\">\
+              <p>Kenneth Gomez:</p>\
           </div>\
-        </div>";
-    document.getElementById("message_thread").innerHTML = current_history + divs;
-    document.forms["message_input"]["message_text"].value = "";
-    console.log(message);
+          <div class=\"messages msg_sent\">\
+              <p id=\"sent_message\">" + message + "</p>\
+          </div>\
+      </div>\
+      <div class=\"col-2 avatar\">\
+          <img class=\"chat_img\" src=\"" + sender_avatar + "\" class=\" img-responsive \">\
+        </div>\
+      </div>";
+
+  if(message==null||message==""){
+    return false;
+  }
+  else {
+  document.getElementById("message_thread").innerHTML = current_history + divs;
+  document.forms["message_input"]["message_text"].value = "";
   }
 }
 
