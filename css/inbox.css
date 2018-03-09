@@ -393,3 +393,16 @@ ul {
 .messenger_name_hard {
     font-size: 12px;
 }
+
+.messenger_date{
+font-size: 10px;
+margin-top:-10px;
+text-align: right;
+    
+}
+.messenger_date_hard{
+    font-size: 10px;
+       margin-top:-10px;
+       margin-bottom:-15px;
+}
+
