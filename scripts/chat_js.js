@@ -18,14 +18,17 @@ $(document).on('keyup', 'form input[type="text"]', function(e) {
 function send_mes(){
   var message = document.forms["message_input"]["message_text"].value;
   var current_history = document.getElementById("message_thread").innerHTML;
+  var today = new Date();
+
+  
 
   if(message != "" && message != " "){
     var divs = "<div class=\"row msg_container base_sent\">\
-        <div class=\"col-10\">\
+        <div class=\"col-10 col-padding\">\
         <div class=\"messenger_name\">\
-              <p>Kenneth Gomez:</p>\
+              <p>Kenneth Gomez:</p>\ <div class=\"messenger_date\">" + today + "</div>\
           </div>\
-            <div class=\"messages msg_sent\">\
+    <div class=\"messages msg_sent\">\
                 <p id=\"sent_message\">" + message + "</p>\
             </div>\
         </div>\
