@@ -1,5 +1,5 @@
 var profile_pics = ["girl.jpg","man.JPG","boy.png","temp_prof.png"]
-var sender_avatar = "./images/prof_pic.png" // path to the sender's avater (aka the user)
+var sender_avatar = "http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" // path to the sender's avater (aka the user)
 var recipient_avatar = "" // path to the receiver's avatar (aka the person you're talking to)
 var toggle = false;
 $(document).on('keypress', 'form input[type="text"]', function(e) {
@@ -18,28 +18,19 @@ $(document).on('keyup', 'form input[type="text"]', function(e) {
 function send_mes(){
   var message = document.forms["message_input"]["message_text"].value;
   var current_history = document.getElementById("message_thread").innerHTML;
-  var today = new Date();
 
-  
-
-  if(message != "" && message != " "){
-    var divs = "<div class=\"row msg_container base_sent\">\
-        <div class=\"col-10 col-padding\">\
-        <div class=\"messenger_name\">\
-              <p>Kenneth Gomez:</p>\ <div class=\"messenger_date\">" + today + "</div>\
+  var divs = "<div class=\"row msg_container base_sent\">\
+      <div class=\"col-10\">\
+          <div class=\"messages msg_sent\">\
+              <p id=\"sent_message\">" + message + "</p>\
           </div>\
-    <div class=\"messages msg_sent\">\
-                <p id=\"sent_message\">" + message + "</p>\
-            </div>\
+      </div>\
+      <div class=\"col-2 avatar\">\
+          <img src=\"" + sender_avatar + "\" class=\" img-responsive \">\
         </div>\
-        <div class=\"col-2 avatar\">\
-            <img class=\"chat_img\" src=\"" + sender_avatar + "\" class=\" img-responsive \">\
-          </div>\
-        </div>";
-    document.getElementById("message_thread").innerHTML = current_history + divs;
-    document.forms["message_input"]["message_text"].value = "";
-    console.log(message);
-  }
+      </div>";
+  document.getElementById("message_thread").innerHTML = current_history + divs;
+  document.forms["message_input"]["message_text"].value = "";
 }
 
 function minimize(){
@@ -49,7 +40,7 @@ function minimize(){
     toggle = false;
   }
   else{
-    window.style.bottom = "-345px";
+    window.style.bottom = "-350px";
     toggle = true;
   }
 }
