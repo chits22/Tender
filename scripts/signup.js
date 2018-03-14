@@ -50,7 +50,7 @@ function validateForm2()
       document.getElementById("user_select").action = "./user_profile_first.html";
     }
     else if(user == "tristan@gmail.com"){
-      document.getElementById("user_select").action = "./tristan_user_profile_first.html";
+      document.getElementById("user_select").action = "./user_profile_tristan.html";
     }
     else{
       alert("User does not exist");
