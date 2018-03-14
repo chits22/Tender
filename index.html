@@ -1,34 +1,89 @@
-<!DOCTYPE html>
-<html lang="en" >
 
-<head>
-  <meta charset="UTF-8">
-  <h1>Tender</h1>
-  <h2>Local Tennis Player Matcher</h2>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<html>
 
-    <link rel="stylesheet" href="css/login.css">
+  <head>
+    <title>Tender</title>
+    <meta charSet="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Local Tennis Player Matcher">
+    <meta property="og:image" content="">
 
-</head>
-<body>
-  <script src ="./scripts/signup.js"> </script>
-  <form name="Forms" action= "user_profile_first.html" onsubmit= "return validateForm2()" method="get">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-    <fieldset>
+    <link rel="stylesheet" href="https://www.launchaco.com/static/AllTemplates.min.css">
 
-      <label for="mail">Email :</label>
-      <input type="email" id="mail" name="user_email">
 
-      <label for="password">Password :</label>
-      <input type="password" id="password" name="user_password">
 
-</fieldset>
-  <p>Forgot your password? click <a href="forgotpassword.html">here!</a></p>
-  <button type="submit">Log In</button>
+  </head>
 
-   <p> Don't have an account? </p>
-    <button type="button" onclick="location.href='signup.html'">Sign up</button>
-  </form>
+  <body class="font-friendly">
+    <div class="green-accent">
+      <!---->
+      <header class="header">
+        <div class="container-lrg">
+          <div class="flex col-12 spread">
+            <a class="logo primary-color launchaco-builder-hoverable">Tender</a>
+          </div>
+        </div>
+      </header>
+      <section class="section">
+        <div class="container mb40">
+          <div class="col-12 text-center">
+            <h1 class="heading-lrg primary-color launchaco-builder-hoverable">Local Tennis Player Matcher</h1>
+            <h2 class="subheading secondary-color mt20 launchaco-builder-hoverable">Find players of your skill level</h2>
+            <div class="mt40">
+              <a href="./login.html" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable primary-color mobile-text-center accent-bg">
+                <span> Get Started Now </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container-lrg">
+          <div class="col-12">
+            <div class="browser mt75 launchaco-builder-hoverable">
+              <div class="mask">
+                <img src="https://cdn.launchaco.com/images/96a5b090-8aad-4f40-ba8f-ed9a7121d86b.png" alt="Screenshot of App in Browser" class="mask-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="feature-1" class="section green-white" sitemeta="[object Object]" activepage="Landing">
+      <div class="container-lrg flex">
+        <div class="col-4 text-center flex flex-column center-horizontal">
+          <i class="icon mobile-center-icon secondary-bg launchaco-builder-hoverable">
+            <svg class="svg-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+              <path d="M12.5 0A12.5 12.5 0 1 0 25 12.5 12.5 12.5 0 0 0 12.5 0zm-10 13a.5.5 0 1 1 .5-.5.5.5 0 0 1-.5.5zm10-11a.5.5 0 1 1-.5.5.5.5 0 0 1 .5-.5zm0 21a.5.5 0 1 1 .5-.5.5.5 0 0 1-.5.5zm3.89-6.61L5.074 19.924 8.611 8.61l11.314-3.536zM22.5 13a.5.5 0 1 1 .5-.5.5.5 0 0 1-.5.5z"></path>
+            </svg>
+          </i>
+          <h3 class="bold primary-color launchaco-builder-hoverable">Find players nearby</h3>
+          <p class="paragraph secondary-color launchaco-builder-hoverable">Find players nearby quickly and easily.</p>
+        </div>
+        <div class="col-4 text-center flex flex-column center-horizontal">
+          <i class="icon mobile-center-icon secondary-bg launchaco-builder-hoverable">
+            <svg class="svg-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+              <path d="M20 22.494v1a.5.5 0 0 1-1 0v-1a.5.5 0 1 1 1 0zm-14.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5zm7 1a10.924 10.924 0 0 1-2.494-.391l-.27 1.76a.528.528 0 0 0 .097.454.498.498 0 0 0 .387.183h4.56a.5.5 0 0 0 .49-.598l-.275-1.8a10.928 10.928 0 0 1-2.495.392zm9.06-7.44L18 11.995v9h2.5a1.5 1.5 0 0 0 1.5-1.5v-2.879a1.5 1.5 0 0 0-.44-1.06zM17 5.995v15a18.472 18.472 0 0 1-4 .974v-7.474a.5.5 0 0 0-1 0v7.474a18.47 18.47 0 0 1-4-.974v-15C8 3.67 11.553.244 12.5 0c.947.244 4.5 3.67 4.5 5.994zm-2.168 1.127A4.374 4.374 0 0 0 12.5 5.994a4.113 4.113 0 0 0-2.343 1.136.5.5 0 0 0 .686.729 3.213 3.213 0 0 1 1.657-.865 3.417 3.417 0 0 1 1.668.874.5.5 0 0 0 .664-.748zM3 16.614v2.88a1.5 1.5 0 0 0 1.5 1.5H7v-9l-3.56 3.56a1.5 1.5 0 0 0-.44 1.06z"></path>
+            </svg>
+          </i>
+          <h3 class="bold primary-color launchaco-builder-hoverable">Equal skill levels</h3>
+          <p class="paragraph secondary-color launchaco-builder-hoverable">Players are ranked based on NTRP skill levels. Finding players of your skill guarantees close and exciting matches</p>
+        </div>
+        <div class="col-4 text-center flex flex-column center-horizontal">
+          <i class="icon mobile-center-icon secondary-bg launchaco-builder-hoverable">
+            <svg class="svg-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+              <path d="M20 22.494v1a.5.5 0 0 1-1 0v-1a.5.5 0 1 1 1 0zm-14.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5zm7 1a10.924 10.924 0 0 1-2.494-.391l-.27 1.76a.528.528 0 0 0 .097.454.498.498 0 0 0 .387.183h4.56a.5.5 0 0 0 .49-.598l-.275-1.8a10.928 10.928 0 0 1-2.495.392zm9.06-7.44L18 11.995v9h2.5a1.5 1.5 0 0 0 1.5-1.5v-2.879a1.5 1.5 0 0 0-.44-1.06zM17 5.995v15a18.472 18.472 0 0 1-4 .974v-7.474a.5.5 0 0 0-1 0v7.474a18.47 18.47 0 0 1-4-.974v-15C8 3.67 11.553.244 12.5 0c.947.244 4.5 3.67 4.5 5.994zm-2.168 1.127A4.374 4.374 0 0 0 12.5 5.994a4.113 4.113 0 0 0-2.343 1.136.5.5 0 0 0 .686.729 3.213 3.213 0 0 1 1.657-.865 3.417 3.417 0 0 1 1.668.874.5.5 0 0 0 .664-.748zM3 16.614v2.88a1.5 1.5 0 0 0 1.5 1.5H7v-9l-3.56 3.56a1.5 1.5 0 0 0-.44 1.06z"></path>
+            </svg>
+          </i>
+          <h3 class="bold primary-color launchaco-builder-hoverable">Find Courts</h3>
+          <p class="paragraph secondary-color launchaco-builder-hoverable">Find the closest and best courts reviewed by your tennis piers</p>
+        </div>
+      </div>
+      <!---->
+    </section>
 
-</body>
+  </body>
+
+
+
 </html>
