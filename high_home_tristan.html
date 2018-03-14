@@ -74,120 +74,125 @@
     </div>
   </div>
   <div class="row people_rows">
+
+
           <div class="col-4">
-        <div class="card" style="width: 20rem; margin-left:16px; margin-bottom:30px; margin-right:-200px;border-color:black;" >
-          <div class ="image_back"> <img src="images/chaitra.jpg" height=100 width=100>
-          <h3 class="title_card" style="color: #006400; font-size:29px; ">Chaitra Subramaniam</h3></div>
+        <div class="card" style="width: 20rem; margin-left:16px; margin-bottom:30px;border-color:black;" >
+          <div class ="image_back"> <img src="images/temp_prof.png" height=100 width=100>
+          <h3 class="title_card" style="color: #006400;">Jill Evans</h3></div>
           <div class="card-block" >
-            <div class="bio_box"> Hey, I'm Chaitra and I love playing tennis. I haven't played since middle school so I am very excited to get back in the game and play soon! </div>
+            <div class="bio_box"> Hey, I'm Jill and i'm a sophomore in McCormick. I'm studying CS and I am a volunteer for Girls Who Code. I also love playing tennis and can't wait to set up a match soon! </div>
             <hr/>
-            <div class = "other_box"><i class="fa fa-birthday-cake"></i>   21 years old</div>
-            <div class = "other_box"><img src="https://png.icons8.com/metro/50/000000/tennis.png" width=15 height=15>  2.0</div>
-            <div class = "other_box"> <i class="fa fa-home"></i>    Outside Courts</div>
-            <button type="button" onclick="chat_show()" class="btn green_button" style="z-index:10;">Message</button>
-          <a href="userprofchaitra.html" class="btn btn-secondary" style="padding-left:40px;padding-right:40px;">View Profile</a>
+            <div class = "other_box"><i class="fa fa-birthday-cake"></i>   19 years old</div>
+            <div class = "other_box"><img src="https://png.icons8.com/metro/50/000000/tennis.png" width=15 height=15>  6.0</div>
+            <div class = "other_box"> <i class="fa fa-home"></i>    SPAC</div>
+            <a href="#" class="btn green_button" style=>Message</a>
+            <a href="#" class="btn btn-secondary" style="padding-left:40px;padding-right:40px; ">View Profile</a>
           </div>
         </div>
       </div>
+
 
 
 
         <div class="col-4">
           <div class="card" style="width: 20rem; margin-left:16px; margin-bottom:30px; margin-right:-200px;border-color:black;" >
-            <div class ="image_back"> <img src="images/mihir.png" height=100 width=100>
-            <h3 class="title_card" style="color: #006400; font-size:29px; ">Mihir Sawroop</h3></div>
+            <div class ="image_back"> <img src="images/timmy.png" height=100 width=100>
+            <h3 class="title_card" style="color: #006400; font-size:29px; ">Lil Timmy</h3></div>
             <div class="card-block" >
-              <div class="bio_box"> Sup. I't just a guy who loves tendies and is tryna play some tennis. HMU.</div>
+              <div class="bio_box">I'm kind of the best. This stupid scale doesn't go high enough for me. Don't message unless you've won 3 international world championships like me. hahaha bet you haven't loser. Go cry to your mommy</div>
               <hr/>
-              <div class = "other_box"><i class="fa fa-birthday-cake"></i>   21 years old</div>
-              <div class = "other_box"><img src="https://png.icons8.com/metro/50/000000/tennis.png" width=15 height=15>  3.0</div>
-              <div class = "other_box"> <i class="fa fa-home"></i>    Outside Courts</div>
+              <div class = "other_box"><i class="fa fa-birthday-cake"></i>   13 years old</div>
+              <div class = "other_box"><img src="https://png.icons8.com/metro/50/000000/tennis.png" width=15 height=15>  7.0</div>
+              <div class = "other_box"> <i class="fa fa-home"></i>    SPAC</div>
               <button type="button" onclick="chat_show()" class="btn green_button" style="z-index:10;">Message</button>
             <a href="userprofchaitra.html" class="btn btn-secondary" style="padding-left:40px;padding-right:40px;">View Profile</a>
             </div>
           </div>
         </div>
-      </div>
+
+
+    </div>
 
 
 
-
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Edit Search Settings</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
-                <span aria-hidden="true">&times;</span>
-              </button>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Search Settings</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <h3 style="margin-top: 25px;">Distance:</h3>
+              </div>
             </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-12">
-                  <h3 style="margin-top: 25px;">Distance:</h3>
-                </div>
+            <form name="search_settings" action="" method="get" id="oneForm">
+            <div class="row">
+              <div class="col-12">
+                <input type="range" min="1" max="50" value="25" class="slider" id="distance">
+                <p id="distance_text" style="width: 50px;"></p>
               </div>
-              <form name="search_settings" action="" method="get" id="oneForm">
-              <div class="row">
-                <div class="col-12">
-                  <input type="range" min="1" max="50" value="25" class="slider" id="distance">
-                  <p id="distance_text" style="width: 50px;"></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                    <h3 style="margin-top: 50px;">Skill Range:</h3>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <label for="skill_level">Low: </label>
-                  <select class="form-control" id="lowest_skill" name="lower_bound">
-                    <option value="low">1.0</option>
-                    <option value="low">1.5</option>
-                    <option value="low">2.0</option>
-                    <option value="low">2.5</option>
-                    <option value="low">3.0</option>
-                    <option value="low">3.5</option>
-                    <option value="mid">4.0</option>
-                    <option value="mid">4.5</option>
-                    <option value="mid">5.0</option>
-                    <option value="mid">5.5</option>
-                    <option value="high">6.0</option>
-                    <option value="high">6.5</option>
-                    <option value="high">7.0</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <label for="skill_level">High: </label>
-                  <select class="form-control" id="highest_skill" name="higher_bound">
-                    <option value="low">1.0</option>
-                    <option value="low">1.5</option>
-                    <option value="low">2.0</option>
-                    <option value="low">2.5</option>
-                    <option value="low">3.0</option>
-                    <option value="low">3.5</option>
-                    <option value="mid">4.0</option>
-                    <option value="mid">4.5</option>
-                    <option value="mid">5.0</option>
-                    <option value="mid">5.5</option>
-                    <option value="high">6.0</option>
-                    <option value="high">6.5</option>
-                    <option value="high">7.0</option>
-                  </select>
-                </div>
-              </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="submit" onclick="changeAction()" class="btn green_button">Save changes</button>
-            </form>
             </div>
+            <div class="row">
+              <div class="col-12">
+                  <h3 style="margin-top: 50px;">Skill Range:</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label for="skill_level">Low: </label>
+                <select class="form-control" id="lowest_skill" name="lower_bound">
+                  <option value="low">1.0</option>
+                  <option value="low">1.5</option>
+                  <option value="low">2.0</option>
+                  <option value="low">2.5</option>
+                  <option value="low">3.0</option>
+                  <option value="low">3.5</option>
+                  <option value="mid">4.0</option>
+                  <option value="mid">4.5</option>
+                  <option value="mid">5.0</option>
+                  <option value="mid">5.5</option>
+                  <option value="high">6.0</option>
+                  <option value="high">6.5</option>
+                  <option value="high">7.0</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label for="skill_level">High: </label>
+                <select class="form-control" id="highest_skill" name="higher_bound">
+                  <option value="low">1.0</option>
+                  <option value="low">1.5</option>
+                  <option value="low">2.0</option>
+                  <option value="low">2.5</option>
+                  <option value="low">3.0</option>
+                  <option value="low">3.5</option>
+                  <option value="mid">4.0</option>
+                  <option value="mid">4.5</option>
+                  <option value="mid">5.0</option>
+                  <option value="mid">5.5</option>
+                  <option value="high">6.0</option>
+                  <option value="high">6.5</option>
+                  <option value="high">7.0</option>
+                </select>
+              </div>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" onclick="changeAction()" class="btn green_button">Save changes</button>
+          </form>
           </div>
         </div>
       </div>
-      </div>
+    </div>
+    </div>
+
 
 <div class="container chat_body" id="chat_window" style="opacity:0;width: 300px; margin-left:900px;">
     <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:0px;">
@@ -226,7 +231,7 @@
 
 <script src="./scripts/edit_settings.js"></script>
 <script src="./scripts/home.js"></script>
-<script src="./scripts/newchat_js tristan.js"></script>
+<script src="./scripts/newchat_js.js"></script>
 <script src="./search_settings_tristan.js"></script>
 
   </body>
