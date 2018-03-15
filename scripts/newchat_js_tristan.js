@@ -1,5 +1,5 @@
 var profile_pics = ["girl.jpg","man.JPG","boy.png","temp_prof.png"]
-var sender_avatar = "./images/tristan_pic.png" // path to the sender's avater (aka the user)
+var sender_avatar = "./images/tristan_pic.jpg" // path to the sender's avater (aka the user)
 var recipient_avatar = "" // path to the receiver's avatar (aka the person you're talking to)
 var toggle = false;
 $(document).on('keypress', 'form input[type="text"]', function(e) {
